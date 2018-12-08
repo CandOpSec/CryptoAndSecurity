@@ -1,0 +1,38 @@
+PP chapter 2 - notes
+
+
+To what we stick with:
+
+
+2. To what PP sticks with (some core rules)
+
+3. Security level claim (EAL4 defined in [])
+
+4. Security of creation devices [7]
+5. Security Problem definition [7]
+
+6. Security Objective statement [7]
+
+7. Security Requirements Statement 
+[7]
+-> from what i have seen these points(4,5,6,7) link to that position
+
+
+8. Conformance statement: any PP claiming conformance to this PP  requires strict conformance
+
+
+
+PP chapter 3 - notes
+
+1. What assets are protected - primary and secondary.
+
+2. Define who are the entities (internal, external) (card user, terminal, etc.)
+
+3. Threats - describe the possible attacks,
+
+4. Security Policies - security rules, practices, policies.
+
+5. Assumptions - security aspects of stuff where TOE will be used.
+
+
+PP chapter 4 - notes

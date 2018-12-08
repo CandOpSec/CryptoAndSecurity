@@ -1,0 +1,87 @@
+\documentclass[a4paper, 11pt]{article}% use option titlepage to get the title on a page of its own.
+\usepackage[margin=2.5cm]{geometry}
+\title{\vspace*{1.5cm}~\\Protection Profile ‘Protection Profile for modern eID Card with e-authentication application and domain signatures application \vspace*{6cm}~\\}
+
+\date{November of 2018}
+
+\author{Marietta Suchanek,\\ Arkadiusz Lewandowski,\\ Francesco Mauri,\\ Jakub Pezda,\\ Michał Szala\vspace*{4cm} ~\\~\\ Wrocław University of Technology\\Faculty of Basics Problems of Technology
+}
+
+\begin{document}
+\maketitle
+\newpage
+\section{\huge{Introduction}}
+~\\\textbf{\Large{1.1 PP reference}}\\\\
+\textbf{Title:} Protection Profile ‘Protection Profile for modern eID Card with e-authentication application and domain signatures application.\\
+\textbf{Assurance Level:} at least  EAL4\\
+\textbf{Authors:} Marietta Suchanek, Arkadiusz Lewandowski, Francesco Mauri, Jakub Pezda, Michał Szala\\
+\textbf{General Status:} In development\\
+\textbf{Version Number:} 0.3 as of beginning of November 2018\\
+\textbf{Keywords:} electronic Identity card, eID card, ID card\\\\
+\textbf{\large{1.1.1 TOE definition and operational usage}}\\\\
+\textbf{3.}\\
+Target of evaluation is an electronic ID card, that is in form of small contactless smart card. Given card provides following functionalities:
+%programmed according to given standards such as [\textit{TBA}] or [\textit{TBA}]%
+\begin{itemize}
+\item{\textit{e-authentication} - containing the data needed to authenticate given user. The intent of this functionality is to verify earlier stated identity.}
+\item{\textit{domain signatures application} - \textit{TBC}}
+\end{itemize}
+\textbf{4.}\\
+For e-authentication electronic ID card user can authenticate to his identity by presenting the card to other authorities.\\\\
+\textbf{5.}\\
+For domain signatures application eID card user \textit{TBC}\\\\
+\textbf{6.}\\
+The electronic ID card is a plastic card resembling the Identity cards that can be met nowadays. Given PP focuses on the functionality of eID cards. Features like plastic cover of the card or how it is all embedded in is not the scope of this PP. \\\\
+\textbf{7.}\\
+However for TOE it shall be included at least:
+\begin{enumerate}
+\item{Circuity of eID making it possible for the software to be active during operational phase.}
+\item{Embedded Software (operating system).}
+\item{e-authenticate and domain signatures functionality.}
+\item{the associated documentation.}\\\\
+\end{enumerate}
+\textbf{\Large{1.2 TOE Overview}}\\\\
+\textbf{\large{1.2.1 TOE major security features for operational use}}\\\\
+\textbf{8.}\\
+The most significant security features for TOE are:
+\begin{itemize}
+\item{Authenticated devices have the possibility to get access to user data stored on the TOE.}
+\item{Authenticated devices can use the security functionality of electronic ID card under the control of the electronic card user.}
+\item{Operations on domain signatures if given functionality is available.}
+\item{Avoiding the tracing of the electronic ID card.}
+\item{TOE shall be self-protected against any threat that may tamper with the data stored inside.}
+\end{itemize}~\\~\\
+\textbf{\large{1.2.2 TOE type}}\\\\
+\textbf{9.}\\
+The type of the TOE is a contactless smart card with e-authentification and domain signatures application functionalities. Given whole set is names as a whole electronic Identity Card, hereinafter referred as eID.\\\\
+\textbf{10.}\\
+As for the phases of life for current TOE we can distinguish:
+\begin{enumerate}
+\item{Development}
+\item{Manufacturing}
+\item{Issuing}
+\item{Operational use}
+\end{enumerate}
+As  the 4. point possesses the highest focus of this PP. Some single cases from other life phases will also be taken into consideration.\\\\
+\textbf{\large{1.2.3 Non-TOE hardware/software/firmware}}\\\\
+\textbf{11.}\\
+For TOE to be able to communicate to other parties the device for reading cards is needed. For such device one can think of a terminal reader.\\\\ %Sample device might be the one that can be found in [\textit{TBC}].
+\textbf{12.}\\
+Before performing operations on terminal by TOE the proper authentication procedure by that terminal must firstly be used. Given condition is needed to hold authentification of the device to be either the one responsible for \textit{e-authentification} or \textit{domain signatures application} when communicating with TOE.\\\\
+\textbf{\Large{2 Conformance Claims}}\\\\
+\textbf{\large{2.1 CC Conformance Claim}}
+Presented protection profile conforms to:
+\begin{enumerate}
+\item{Common Criteria for Information Technology Security Evaluation, Part 1: Introduction and General Model; CCMB-2009-07-001, Version 3.1, Revision 3, July 2009 [1]}
+\item{Common Criteria for Information Technology Security Evaluation, Part 2: Security Functional Components; CCMB-2009-07-002, Version 3.1, Revision 3, July 2009 [2]}
+\item{Common Criteria for Information Technology Security Evaluation, Part 3: Security Assurance Requirements; CCMB-2009-07-003, Version 3.1, Revision 3, July 2009 [3]
+as follows for Part 2 and Part 3.}
+\end{enumerate}
+\newpage
+\begin{thebibliography}{3}
+\bibitem{}Common Criteria for Information Technology Security Evaluation, Part 1: Introduction and General Model; CCMB-2009-07-001, Version 3.1, Revision 3, July 2009
+\bibitem{}Common Criteria for Information Technology Security Evaluation, Part 2: Security Functional Components; CCMB-2009-07-002, Version 3.1, Revision 3, July 2009
+\bibitem{}Common Criteria for Information Technology Security Evaluation, Part 3: Security Assurance Requirements; CCMB-2009-07-003, Version 3.1, Revision 3, July 2009
+\end{thebibliography}
+
+\end{document}
